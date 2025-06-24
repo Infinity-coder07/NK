@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandankanana</title>
+
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geostar&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Lavishly+Yours&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+    </style> -->
+
+    <style>
+        :root {
+            --bgcolor: rgba(87, 100, 14, 0.74);
+            --textcolor: white;
+            --secondary-color: rgb(159, 170, 6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            color: var(--textcolor);
+
+        }
+
+        body {
+            background-color: var(--bgcolor);
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 5px 5px;
+            display: flex;
+            justify-content: center;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: 80%;
+            /* or max-width: 800px; */
+        }
+
+        nav>ul>li>a {
+            text-decoration: none;
+            color: var(--textcolor);
+
+
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+
+        }
+
+        h1 {
+            /* margin-top: 100px; */
+            padding-top: 100px;
+            text-align: center;
+            font-size: 2.5em;
+
+        }
+
+        #bngtext {
+            margin: 0;
+            padding-top: 0px;
+            ;
+            font-size: 2.5rem;
+        }
+
+        .top_part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+
+        .top_part img {
+            margin-bottom: 75px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .top_part>a>h3 {
+            margin-top: 10px;
+            font-size: 1.5em;
+            color: var(--textcolor);
+            text-decoration: none;
+        }
+
+        .firstlink {
+            text-decoration: none;
+        }
+
+        hr {
+            margin-top: 20px;
+            ;
+            width: 95%;
+            justify-self: center;
+            opacity: 0.5;
+        }
+
+        #events {
+            padding: 20px;
+
+            /* margin-top: 20px; */
+            font-size: 35px;
+            /* text-align: left; */
+        }
+
+        .events {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .events>a>img {
+            display: block;
+            width: 300px;
+            height: 400px;
+            margin-top: 50px;
+
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .events>a>span {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.7em;
+            color: var(--textcolor);
+            text-decoration: none;
+        }
+
+        #about,
+        h2 {
+            padding: 20px;
+            font-size: 35px;
+            text-align: left;
+        }
+
+        p {
+            padding-left: 20px;
+        }
+
+        .about {
+            /* padding: 20px; */
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: var(--textcolor);
+
+            margin: auto;
+        }
+
+        /* #contactul > li {
+            list-style: square;
+            padding-top: 20px;
+            
+        } */
+
+        #contactul img {
+            /* margin-top: 20px; */
+            height: 40px;
+            width: 40px;
+            margin-right: 5px;
+        }
+        .contact li{
+            list-style: none;
+            /* padding: 10px 0; */
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin-top: 20px;
+            
+            
+        }
+        .contact span {
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 18px;
+
+        }
+            
+        
+        #contactul {
+            padding: 20px;
+        }
+        .contact a{
+            text-decoration: none;
+            font-size: 2.7em;
+            color: var(--textcolor);
+            text-align: center;
+            display: flex;
+        }
+
+        footer{
+            margin-top: 50px;
+            background-color: rgb(70, 69, 6);
+            color: var(--textcolor);
+            text-align: right;
+            padding-right: 10px;
+            opacity: 0.5;
+            
+        }
+        .more a{
+            padding: 20px;
+            font-size: 1.5em;
+            
+        }
+        .more p{
+            margin-bottom: 30px;;
+        }
+    </style>
+
+    <style>
+        #popup {
+            text-align: center;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            display: none;
+            font-family: sans-serif;
+            z-index: 9999;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        #popup button {
+            margin: 8px 5px 0;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #popup .yes {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        #popup .no {
+            background-color: #f44336;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Popup Structure -->
+
+    <!-- <div id="popup">
+        <p>Translate into bengali ?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div> -->
+
+    <script>
+        // Show the popup after page loads
+        window.onload = function () {
+            const popup = document.getElementById('popup');
+            const yesBtn = popup.querySelector('.yes');
+            const noBtn = popup.querySelector('.no');
+
+            popup.style.display = 'block';
+
+            // Auto-close in 10 seconds
+            const timer = setTimeout(() => {
+                popup.style.display = 'none';
+            }, 10000);
+
+            yesBtn.onclick = () => {
+                clearTimeout(timer);
+                window.location.href = "NK_Bengali/bengali_page.html"; // 🔗 change to your URL
+            };
+
+            noBtn.onclick = () => {
+                clearTimeout(timer);
+                popup.style.display = 'none';
+            };
+        };
+    </script>
+
+
+
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contacth2">Join Us</a></li>
+            <li><a href="#more">More</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h1 id="top">Welcome To </h1>
+    <h1 id="bngtext">Nandankanana</h1>
+
+
+    <div class="top_part">
+        <img src="NK_PIC.png">
+    </div>
+
+    <hr>
+
+
+    <h2 id="events"> Our Events </h2>
+
+    <div class="events">
+
+
+        <a href="NK_MAIN_EVENT/NK_MAIN.html">
+            <img src="EVENT_PICS\NK_MAIN.jpg" href="NK_MAIN_EVENT\NK_MAIN.html">
+            <span>Nandankanan</span>
+
+        </a>
+
+        <a href="NK_MAGAZINE/NK_MAGAZINE.html">
+            <img src="EVENT_PICS\NK_MAGAZINE.jpg" href="NK_Bengali/bengali_page.html">
+            <span>Magazine</span>
+        </a>
+
+        <a href="NK_GREEN_MISSION/NK_GREEN.html">
+            <img src="EVENT_PICS\NK_GREEN.jpg" href="">
+            <span>Green Mission</span>
+
+        </a>
+
+
+    </div>
+
+    <hr>
+    <h2 id="about">About Us</h2>
+    <div class="about">
+        <p>
+            Nandankanana is a place of joy and happiness. It is a place where you can find peace and tranquility. The
+            beauty of nature is at its best here. The animals and birds are a sight to behold. The greenery and the
+            fresh air make it a perfect getaway from the hustle and bustle of city life.
+            Nandankanana is a place where you can relax and rejuvenate. It is a place where you can connect with nature
+            and find inner peace. The serene environment and the soothing sounds of nature make it a perfect place to
+            unwind and recharge your batteries.
+            Nandankanana is a place where you can create memories that will last a lifetime.
+        </p>
+    </div>
+
+    <hr>
+    <h2 id="contacth2">Join Us</h2>
+    <div class="contact">
+        <p>
+            If you have any queries or suggestions, feel free to reach out to us at:
+            <br>
+        </p>
+
+        <ul id="contactul">
+            <!-- just a comment for line break-->
+            <li>
+                <a href="">
+                    <img src="facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <!-- just a comment for line break -->
+            <li>
+                <a href="">
+                    <img src="facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <!-- just a comment for line break -->
+            <li>
+                <a href="">
+                    <img src="facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <!-- just a comment for line break -->
+            <li>
+                <a href="">
+                    <img src="facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <!-- just a comment for line break -->
+            <li>
+                <a href="">
+                    <img src="facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <hr>
+    <div class="more">
+        <h2 id="more">More</h2>
+        <p>
+            For more information, you can visit our official website or follow us on our social media channels.
+            Stay connected with us to get the latest updates and news about Nandankanana.
+        </p>
+
+        <a href="Members/Members.html">Members</a>
+
+    </div>
+
+
+    <footer>
+    <p>© 2025 Nandankanana</p>
+        
+    <p>Designed by Arko</p>
+        
+    </footer>
+</body>
+
+</html>
