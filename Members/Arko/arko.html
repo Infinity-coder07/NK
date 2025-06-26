@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Geostar&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Lavishly+Yours&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+</style>
+
+
+<style>
+    :root {
+        --bgcolor: rgb(123, 57, 247);
+        --textcolor: white;
+        --secondary-color: rgb(43, 0, 71);
+    }
+
+    body {
+        background-color: var(--bgcolor);
+    }
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        color: var(--textcolor);
+
+    }
+
+    nav {
+        background-color: var(--secondary-color);
+        padding: 5px 5px;
+        display: flex;
+        justify-content: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+
+    }
+
+    nav>ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 80%;
+        /* or max-width: 800px; */
+    }
+
+
+
+    nav>ul>li>a {
+        text-decoration: none;
+        color: var(--textcolor);
+        /* font-family: "Rubik Glitch", system-ui; */
+        font-family: "Loved by the King", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size:  18px;
+        /* font-weight: lighter; */ 
+
+        /* font-family: "Lavishly Yours", cursive; */
+    }
+
+    h1 {
+        color: var(--textcolor);
+        text-align: center;
+        margin-top: 20px;
+        /* font-family: "Lavishly Yours", cursive; */
+        /* font-family: "Londrina Shadow", sans-serif; */
+        font-family: "Monoton", sans-serif;
+        letter-spacing: 2px;
+        font-style: normal;
+        font-weight: 400;
+        padding: 30px;
+    }
+
+
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 20px; */
+    }
+
+    .img img {
+
+
+
+        margin-top: 20px;
+
+        border-radius: 50%;
+
+        height: 150px;
+        width: 150px;
+    }
+
+    .bio {
+
+        padding: 20px;
+        color: var(--textcolor);
+        font-size: 20px;
+        /* margin-top: 10px; */
+    }
+
+    .bio span {
+        /* font-weight: lighter; */
+        font-family: "Edu NSW ACT Hand Pre", cursive;
+
+    }
+
+    .bio li {
+        /* font-family: "Edu NSW ACT Hand Pre", cursive; */
+        font-family: "Londrina Shadow", sans-serif;
+        /* font-family: "Monoton", sans-serif; */
+        font-style: normal;
+        font-weight: 400;
+        list-style: none;
+    }
+
+    hr {
+        width: 96%;
+        /* align-items: center; */
+        justify-self: center;
+        opacity: 0.5;
+    }
+
+    #about,
+    h2 {
+        font-size: 40px;
+        padding: 20px;
+        font-family: "Londrina Shadow", sans-serif;
+        font-weight: 400;
+    }
+
+    .about {
+        padding-top: 0px;
+    }
+
+    .contact ul li a {
+        text-decoration: none;
+        color: var(--textcolor);
+
+
+        padding-bottom: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-family: "Edu NSW ACT Hand Pre", cursive;
+
+    }
+
+    .contact li {
+        padding-left: 50px;
+        padding-bottom: 20px;
+        /* align-items: center;
+        display: flex;
+        justify-content: center; */
+    }
+
+    .contact img {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    h2 img{
+        border-radius: 50%;
+    }
+    #links  a {
+        padding: 20px;
+        text-decoration: none;
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-family: "Geostar", serif;
+       
+    }
+    #links li{
+        
+        padding-bottom: 20px;
+    }
+    #links{
+        list-style:inside;
+        padding: 40px;
+    }
+    footer {
+        text-align: right;
+        opacity: 0.5;
+        padding: 20px;
+        font-family: "Edu NSW ACT Hand Pre", cursive;
+        color: var(--textcolor);
+        font-size: 18px;
+    }
+</style>
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contacth2">Let’s Be Friends</a></li>
+            <li><a href="#more">More</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 id="top">Welcome to my page</h1>
+
+    <div class="info">
+
+
+        <div class="img">
+            <img src="dp1.jpg" alt="">
+        </div>
+
+
+        <div class="bio">
+            <ui>
+                <li>Name: <span> Arko Sarkar</span> </li>
+                <li>Age: <span> 17</span> </li>
+                <li>CLass: <span> XI - Sicence</span> </li>
+                <li>Hobby: <span> Coding , Origami , Gaming</span> </li>
+                <li>Skill: <span> HTML , CSS , Python</span> </li>
+            </ui>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2 id="about">BIO :</h2>
+    <p class="bio about">
+        <span>
+            I am a student of class XI, studying in Science stream. I have a keen interest in coding and programming
+            languages. My hobbies include origami and gaming. I am currently learning HTML, CSS, and Python to enhance
+            my skills in web development and programming. I aspire to become a proficient coder and
+            contribute to the tech industry in the future. I believe in continuous learning and strive to improve.
+            I also enjoy exploring new technologies and staying updated with the latest trends in the field of computer
+            science. I am also interested in AI and machine learning
+            <br>
+            <br>
+            I play games like Valorant, Minecraft, Freefire, BGMI, Call of Duty, Need For Speed, Assasian's Creed,
+            Resident Evil, GTA Vice City, GTA IV and many more.
+            <br>
+            <br>
+            I also love to watch anime . I am a big fan of Naruto, Demon Slayer, Death Note, Zom 100. Also Watched some anime movies like
+            Your Name, Weathering with You, A Silent Voice, Susume, I Want to Eat Your Pancreas, The Garden of Words, and many more.
+            I am also a big fan of Marvel movies. I love to watch movies and series like Loki.
+            <br>
+            <br>
+            I also write small stories sometimes and I always have a lot of stories in my mind.
+            I love to travel with friends .
+        </span>
+    </p>
+    <hr>
+    <div class="contact">
+        <h2 id="contacth2">
+            <img src="../ICON/direct.gif">
+            Vibe With Me :
+        </h2>
+
+        <ul id="contact">
+            <li><a href="https://www.instagram.com/_lysosome_007?igsh=a29rZnJoYm00ZTNu">
+                    <img src="../ICON/instagram.png" alt="">
+                    _lysosome_007
+                </a></li>
+
+            <li><a href="https://www.facebook.com/share/16gxeakQcf/?mibextid=qi2Omg">
+
+                    <img src="../ICON/facebook.png" .png" alt="">
+                    Arko Sarkar
+                </a></li>
+
+            <li><a href="https://github.com/Infinity-coder07">
+                    <img src="../ICON/github.png" alt="">
+                    Infinity-coder07
+                </a></li>
+
+            <li><a href="https://discord.com/users/Lysosome_007">
+                    <img src="../ICON/discord.png" alt="">
+                    Lysosome_007
+                </a></li>
+
+            <li><a href="https://t.me/Lysosome007">
+                    <img src="../ICON/telegram.png" alt="">
+                    Lysosome007
+                </a></li>
+
+            <li><a href="https://www.linkedin.com/in/arko-sarkar-307087370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img src="../ICON/linkedin.png" alt="">
+                    Arko Sarkar
+                </a></li>
+
+
+
+        </ul>
+
+    </div>
+
+    <hr>
+    <h2 id="more">More : </h2>
+    <p class="bio about">
+        <span>
+            I have made some projects using HTML, CSS, and Python.
+            <br>
+            <br>
+            Click on the titles below to view them.
+            <br>
+        </span>
+
+        <ul id="links">
+            <li><a href="https://infinity-coder07.github.io/Infinity-verb/">Infinity Verbs</a></li>
+            <li><a href="https://infinity-coder07.github.io/Elements/">Infinity Elements</a></li>
+            <li><a href="https://codeinplace.stanford.edu/cip5/share/Ms64NECVr6A50XOtbmP0">Tic Tac Toe</a></li>
+        </ul>
+
+    </p>
+<footer>
+        <p>
+            Made by Arko 
+        </p>
+    </footer>
+
+</body>
+
+</html>
