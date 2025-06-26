@@ -16,6 +16,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
     </style> -->
 
+
     <style>
         :root {
             --bgcolor: rgba(31, 24, 134, 0.74);
@@ -84,8 +85,9 @@
 
         }
 
-        img {
-            margin-top: 60px;;
+        .june2025 img {
+            margin-top: 60px;
+            ;
             width: 80%;
             height: auto;
             border-radius: 10px;
@@ -99,7 +101,8 @@
             padding-left: 10%;
             align-self: flex-start;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-bottom: 30px;;
+            margin-bottom: 30px;
+            ;
         }
 
 
@@ -111,20 +114,127 @@
             justify-self: center;
             opacity: 0.5;
         }
-        h2{
+
+        h2 {
             text-align: left;
-            padding: 20px;;
+            padding: 20px;
+            ;
             margin-top: 20px;
             font-size: 2em;
             color: var(--textcolor);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-size: 35px;
         }
+
         .bts {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
+        }
+
+        .bts img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* Exactly 4 per row */
+            gap: 20px;
+        }
+
+        .pic-box {
+            background-color: white;
+            padding: 3px;
+            /* Only inside the box */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .pic-box>img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .caption {
+            /* margin-top: 10px; */
+            font-size: 10px;
+            color: #333;
+        }
+
+        .old_img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .old_img img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        #contactul img {
+            /* margin-top: 20px; */
+            height: 40px;
+            width: 40px;
+            margin-right: 5px;
+        }
+
+        .contact li {
+            list-style: none;
+            /* padding: 10px 0; */
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin-top: 20px;
+
+
+        }
+
+        .contact span {
+            /* margin-top: 80px; */
+            margin-left: 10px;
+            font-size: 18px;
+
+        }
+
+
+        #contactul {
+            padding: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            font-size: 2.7em;
+            color: var(--textcolor);
+            text-align: center;
+            display: flex;
+        }
+
+        address {
+
+            padding-left: 20px;
+            font-size: 1.3em;
+            color: var(--textcolor);
+            text-align: left;
+            font-style: normal;
+        }
+
+        address>span {
+            font-weight: bold;
+            font-size: 1.2em;
         }
     </style>
 
@@ -136,38 +246,205 @@
     <nav>
         <ul>
             <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contacth2">Contact Us</a></li>
+            <li><a href="#bts">BTS</a></li>
+            <li><a href="#members">Members</a></li>
             <li><a href="#more">More</a></li>
         </ul>
     </nav>
-    <hr>
+    <hr id="top">
 
     <h1>We Shall Overcome</h1>
 
     <div class="june2025">
         <img src="JUNE2025/main.png" alt="NK Magazine Cover">
         <h3>June 2025 Edition</h3>
-        
+
     </div>
 
-    <hr>
+    <hr id="bts">
 
     <h2>Behind The Scene</h2>
 
 
     <div class="bts">
-        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png" >
-        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png" >
-        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png" >
-        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png" >
-        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png" >
-        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png" >
-        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png" >
+        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png">
+        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png">
+        <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png">
 
 
     </div>
 
+    <hr id="members">
+    <h2>Members</h2>
+
+
+    <div class="gallery">
+
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+        
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+        <a href="/Members/Arko/arko.html" class="pic-box">
+        <div class="pic-box">
+            <img src="/Members/Arko/DP.png">
+            <div class="caption">Caption 1</div>
+        </div>
+        </a>
+
+ 
+    </div>
+
+
+    <hr id="more">
+    <h2>Previous Magazines</h2>
+
+    <a href="PREVIOUS_YEAR/old_magazine.html">
+        <div class="old_img">
+            <img src="https://i.ibb.co/0s1x3fH/NK-MAGAZINE.png">
+        </div>
+    </a>
+
+
+    <hr>
+    <h2>Contact Us</h2>
+    <address>
+        <span>Location: </span> Fulia Station , Nadia , West Bengal<br>
+    </address>
+    <div class="contact">
+
+
+        <ul id="contactul">
+            <!-- just a comment for line break-->
+            <li>
+                <a href="">
+                    <img src="/ICON/facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <!-- just a comment for line break -->
+            <li>
+                <a href="">
+                    <img src="/ICON/facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <!-- just a comment for line break -->
+            <li>
+                <a href="">
+                    <img src="/ICON/facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <!-- just a comment for line break -->
+            <li>
+                <a href="">
+                    <img src="/ICON/facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <!-- just a comment for line break -->
+            <li>
+                <a href="">
+                    <img src="/ICON/facebook.png">
+                    <span>Facebook</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
 
 
 
